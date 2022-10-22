@@ -24,7 +24,7 @@ public class Posts {
     private String author;
 
     @Builder
-    public Posts(String title, String content, String author){
+    public Posts(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
