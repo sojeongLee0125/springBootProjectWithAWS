@@ -39,3 +39,7 @@ out/
 /gradle/wrapper/gradle-wrapper.properties
 /gradlew
 /gradlew.bat
+
+# spring-security
+application-oauth.properties
+
