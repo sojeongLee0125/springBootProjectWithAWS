@@ -4,22 +4,25 @@ import com.springboot.webservice.springBootProject.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.TypeAlias;
 
 import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
 @Entity
+@Table(name = "USERS")
 public class User extends BaseTimeEntity {
 
     @Id
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "username")
     private String name;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "useremail")
     private String email;
 
     @Column
