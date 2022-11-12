@@ -1,5 +1,4 @@
 HELP.md
-.gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -37,8 +36,6 @@ out/
 .vscode/
 /gradle/wrapper/gradle-wrapper.jar
 /gradle/wrapper/gradle-wrapper.properties
-/gradlew
-/gradlew.bat
 
 # spring-security
 application-oauth.properties
