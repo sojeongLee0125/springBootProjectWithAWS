@@ -40,4 +40,5 @@ out/
 
 # spring-security
 application-oauth.properties
+application-real.properties
 
