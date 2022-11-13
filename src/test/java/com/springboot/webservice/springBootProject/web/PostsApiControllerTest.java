@@ -58,7 +58,7 @@ class PostsApiControllerTest {
     }
 
     @Test
-    @WithMockUser(roles = "USER")
+    @WithMockUser(roles = "GUEST")
     public void create_posts() throws Exception {
         //given
         String title = "title";
@@ -92,7 +92,7 @@ class PostsApiControllerTest {
     }
 
     @Test
-    @WithMockUser(roles = "USER")
+    @WithMockUser(roles = "GUEST")
     public void update_post() throws Exception {
         //given
         Posts savedPosts = postsRepository.save(Posts.builder()
